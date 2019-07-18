@@ -1,0 +1,13 @@
+Connect Four Design Document
+
+
+Objects:
+twoDimensionalArray
+A seven by seven 2-D harry detailing the entire board. Each subarray corresponds with a column. An 'x' represents the first players tiles and a 'o' represents the second players tile. Each turn a player must select an integer from one to seven 
+
+
+Functions:
+isWinner(twoDimensionalArray, isBlack, int LastMove)
+Gets the twoDimensionalArray and checks if Black is the winner if isBlack is true, and returns if white is the winner if isBlack is false.
+
+The algorithm will be split into three parts. isVerticle, isHorizontal, and isDiagonal, each checking if the win occurs. All three functions start at the lastMove and 
